@@ -48,7 +48,7 @@ public class ML_DESIGN {
 
         System.out.println("Total valid words: " + resultWords.size());
         System.out.println("Some valid words: ");
-        resultWords.stream().limit(6892).forEach(System.out::println); // Print first 50 words
+        resultWords.stream().limit(resultWords.size()).forEach(System.out::println); // Print first 50 words
     }
 
     public static boolean canFormWord(String word, Map<Character, Integer> available) {
